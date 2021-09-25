@@ -1,53 +1,55 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DOM örnek</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <title>Dom örnek</title>
   </head>
   <body>
     <main>
+      <!-- ana içerik -->
       <div class="container text-center">
         <h1>Ornekler</h1>
-        <img src="img/img2.jpg" alt="" />
-      </div>
-      <div></div>
+        <img class="resim" src="img/img2.jpg" alt="" />
 
-      <div>
-        <audio
-          src="img/retro-ringtone .mp3"
-          style="width: 0"
-          controls=""
-        ></audio>
+        <div class="mt-4">
+          <audio
+            class="ses"
+            src="img/retro-ringtone .mp3"
+            style="width: 0"
+            controls=""
+          ></audio>
 
-        <button>Ara</button>
-        <button>Baglat</button>
-        <button>Konus</button>
-      </div>
+          <button class="btn on btn-outline-warning">Ara</button>
+          <button class="btn off btn-outline-primary">Baglat</button>
+          <button class="btn speak btn-outline-danger">Konus</button>
+        </div>
 
-      <div>
-        <label for="textbox">Bir şeyler yazınız</label>
-        <input type="text" value="" />
-        <label for="checkbox">küçük/büyük</label>
-        <input type="checkbox" />
-      </div>
+        <div class="input-div mt-5">
+          <label for="textbox">Bir şeyler yazınız</label>
+          <input class="textbox" type="text" value="" />
 
-      <ul>
-        <li>Javascript</li>
-        <li>Java</li>
-        <li>Phython</li>
-        <li>SQL</li>
-        <li>C++</li>
-      </ul>
+          <label for="checkbox">kücük/büyük</label>
+          <input class="checkbox" type="checkbox" />
+        </div>
 
-      <div>
-        <input type="text" />
-        <button>Ekle</button>
-        <button>Sil</button>
+        <ul class="liste text-start">
+          <li>Javascript</li>
+          <li>Java</li>
+          <li>Phyton</li>
+          <li>SQL</li>
+          <li>C++</li>
+        </ul>
+
+        <div class="text-start mt-5">
+          <input class="dil me-1" type="text" />
+          <button class="btn ekle btn-success">Ekle</button>
+          <button class="btn sil btn-danger">Sil</button>
+        </div>
       </div>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>
