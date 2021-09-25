@@ -24,5 +24,33 @@ document.querySelector(".speak").onclick=function(){
 
 
 
+const liste= document.querySelector(".liste");
+
+
+
+
+
+document.querySelector(".ekle").onclick=function(){
+
+   
+    const satır = document.querySelector(".dil");
+
+    liste.innerHTML=liste.innerHTML + `<li>${satır.value}</li>`;
+    satır.value="";
+}
+
+
+
+
+document.querySelector(".sil").onclick=function(){
+    liste.removeChild(liste.lastChild);
+
+}
+
+
+
+
+
+
 
 
