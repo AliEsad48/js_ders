@@ -51,7 +51,10 @@ liste.removeChild(liste.lastElementChild); //listenin çocuklarından listenin s
 const parag=document.querySelector(".forH1");
 parag.innerHTML=`<h1>${"Programlama Dilleri"}</h1>`;
 
-        
+
+
+
+
 //Klavyeden bir tuşa basıldığında büyüsün küçülsün
 document.querySelector(".textbox").onkeyup=function (){
    const checkbox= document.querySelector(".checkbox");
@@ -64,12 +67,23 @@ textbox.value=textbox.value.toUpperCase();
    }
 
 }
-
-
-
-resim.onmouseover = function(){
-    resim.src="./img/aslan2.jpg";
+  
+//mouse resmin üstüne geldiğinde aslan kükresin 
+resim.onmouseover=function () {
+resim.src="./img/aslan2.jpeg";
 }
-resim.onmouseout = function(){
-    resim.src="./img/aslan1.jpg";
+
+//2. ama addEventListener() yolu 
+
+// resim.addEventListener("mouseout",function (){
+//    resim.src = "./img/aslan2.jpeg";
+// })
+
+//mouse resmin üstünden çekildiğinde
+
+resim.onmouseout= function () {
+resim.src="./img/aslan1.jpeg";
+
 }
+
+//enter=13    delete=46
