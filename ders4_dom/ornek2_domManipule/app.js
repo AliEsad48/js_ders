@@ -21,14 +21,14 @@ resim.src="./img/telfırlat.gif"; //resimi yeni gif le değiştirdik
 
 }
 //?ekle butonuna basıldığında yeni bir li ekle upuzun yol
- // // yeni girilen satiri saklamak icin bir li olusturduk.
- //  // const yeniLi = document.createElement("li");
- //  // yeni li icin textnode olusturduk
- //  // const textNode = document.createTextNode(satir.value);
- //  //olusturdugumuz texnode'u yeni li'ye bagladik.
- //  // yeniLi.appendChild(textNode);
- //  // yeni eklenen satiri var olan listeye (ul) baglayalim.
- //  // liste.appendChild(yeniLi);
+ // yeni girilen satiri saklamak icin bir li olusturduk.
+  // const yeniLi = document.createElement("li");
+  // yeni li icin textnode olusturduk
+  // const textNode = document.createTextNode(satir.value);
+  //olusturdugumuz texnode'u yeni li'ye bagladik.
+  // yeniLi.appendChild(textNode);
+  // yeni eklenen satiri var olan listeye (ul) baglayalim.
+  // liste.appendChild(yeniLi);
 
  //kısa yol
  const liste = document.querySelector(".liste"); // dillerin girili olduğu listeye ulaştık
@@ -87,3 +87,36 @@ resim.src="./img/aslan1.jpeg";
 }
 
 //enter=13    delete=46
+
+document.querySelector(".dil").onkeydown = function(klavye) {
+    if (klavye.keyCode == 13) {
+        //!Enter ı çağırma
+        document.querySelector(".ekle").onclick();
+    }
+    if (klavye.keyCode == 46) {
+        //todo Delete yi çağırma
+        document.querySelector(".sil").onclick();
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
