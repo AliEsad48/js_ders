@@ -77,6 +77,34 @@ console.log(sayılar.indexOf(2,  4)); //8  ikinci 2 yi döndürür (4. indexten 
 console.log(sayılar.indexOf(5,  3)); // 7
 
 
+console.log(sayılar.join(" "));
+
+
+
+console.log(sayılar.toString());
+
+
+
+
+const arabalar=["bmw" , "mercedes" , "Volvo" , "sahin" , "anadol"]
+
+console.log(arabalar.slice(2));
+console.log(arabalar.slice(1,3));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
