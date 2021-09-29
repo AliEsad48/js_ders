@@ -94,7 +94,8 @@ console.log(arabalar.slice(1,3));
 
 
 
-
+const birleşik=sayılar.concat(arabalar , true , false , [3,4,5] , meyveler);
+console.log(birleşik);
 
 
 
