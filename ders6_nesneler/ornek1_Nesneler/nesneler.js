@@ -89,5 +89,13 @@ const insan = {
   people.map((x) => x.yas+1).forEach((x)=> console.log(x));
   //Ornek3: Yasi 25'e esit ve ya kucuk olanlarin adlarini yazdir
   people.filter((x) => x.yas <= 35).forEach((x)=> console.log(x.ad));
-  //Ornerk4:
+  //Ornek4:
 
+const degisiklik=people.map((x) =>{
+return 
+{
+ad:x.ad.toUpperCase(),
+yas:x.yas+5,
+soyad:x.soyad.slice(0,2)
+
+}})
