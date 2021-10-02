@@ -78,7 +78,7 @@ const insan = {
     {
       ad: "Huseyin",
       soyad: "Harran",
-      meslek: "Doktor",
+      meslek: "Developer",
       yas: 32,
     },
   ];
@@ -91,11 +91,24 @@ const insan = {
   people.filter((x) => x.yas <= 35).forEach((x)=> console.log(x.ad));
   //Ornek4:
 
-const degisiklik=people.map((x) =>{
-return 
-{
-ad:x.ad.toUpperCase(),
-yas:x.yas+5,
-soyad:x.soyad.slice(0,2)
+  people.map((x) => {
+    return {
+    ad:x.ad.toUpperCase(),
+    yas: x.yas+5,
+    soyad: x.soyad.slice(0,2)
+    };
+    }).forEach((x)=> console.log(x));
 
-}})
+
+
+    const yeni =people.filter((x)=>x.meslek=="Developer").map((x)=>{
+    return {
+        ad:x.ad.toUpperCase(),
+        yas:x.yas,
+    }
+}
+
+
+    );
+
+    console.log(yeni);
